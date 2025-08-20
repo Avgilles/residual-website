@@ -35,9 +35,9 @@ const CaseStudy: React.FC = () => {
            <video 
                   controls 
                   className="w-full h-64 md:h-80 object-cover"
-                  poster="/public/imgs/project/residual_project.png"
+                  poster="/imgs/project/residual_project.png"
                 >
-                  <source src="/public/imgs/project/Trailer_V004.mp4" type="video/mp4" />
+                  <source src="/imgs/project/Trailer_V004.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
           </div>
@@ -200,9 +200,9 @@ const CaseStudy: React.FC = () => {
                   <video 
                     controls 
                     className="w-full h-64 md:h-80 object-cover"
-                    poster="/public/imgs/project/residual_project.png"
+                    poster="/imgs/project/residual_project.png"
                   >
-                    <source src="/public/imgs/project/breakdown3.mov" type="video/mp4" />
+                    <source src="/imgs/project/breakdown3.mov" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                   <div className="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-3 py-1 rounded">

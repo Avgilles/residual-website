@@ -20,11 +20,11 @@ const Projects: React.FC = () => {
       title: 'Residual',
       subtitle: 'Meditative VR Installation',
       description: 'An immersive journey through an abstract digital ecosystem where users explore organic forms, ambient soundscapes, and interactive elements that respond to their presence and movements.',
-      image: './public/imgs/project/residual_project.png',
+      image: '/imgs/project/residual_project.png',
       features: ['Procedural Generation', 'Binaural Audio', 'Gesture Recognition', 'Adaptive Environment'],
       status: 'Featured Project',
       year: '2025',
-      video: '/public/imgs/project/Trailer_V004.mp4'
+      video: '/imgs/project/Trailer_V004.mp4'
     }
   ];
 
