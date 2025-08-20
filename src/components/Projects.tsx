@@ -4,31 +4,13 @@ import { ExternalLink, Award, Users, Clock } from 'lucide-react';
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: 'Digital Garden',
+      title: 'Residual',
       subtitle: 'Meditative VR Installation',
       description: 'An immersive journey through an abstract digital ecosystem where users explore organic forms, ambient soundscapes, and interactive elements that respond to their presence and movements.',
-      image: 'https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: './public/imgs/project/residual_project.png',
       features: ['Procedural Generation', 'Binaural Audio', 'Gesture Recognition', 'Adaptive Environment'],
       status: 'Featured Project',
-      year: '2024'
-    },
-    {
-      title: 'Ocean Memory',
-      subtitle: 'Environmental Awareness Experience',
-      description: 'A powerful underwater VR experience that visualizes ocean plastic pollution and its impact on marine life, encouraging environmental consciousness through emotional storytelling.',
-      image: 'https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=800',
-      features: ['Photorealistic Rendering', 'Educational Content', 'Impact Metrics', 'Multi-language Support'],
-      status: 'In Development',
-      year: '2024'
-    },
-    {
-      title: 'Collective Breath',
-      subtitle: 'Community Wellness Platform',
-      description: 'A shared virtual space where groups can practice mindfulness and breathing exercises together, fostering community connection and collective well-being.',
-      image: 'https://images.pexels.com/photos/3094230/pexels-photo-3094230.jpeg?auto=compress&cs=tinysrgb&w=800',
-      features: ['Real-time Sync', 'Biometric Integration', 'Social Features', 'Progress Tracking'],
-      status: 'Coming Soon',
-      year: '2024'
+      year: '2025'
     }
   ];
 

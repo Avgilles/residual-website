@@ -97,12 +97,6 @@ const Team: React.FC = () => {
                     href={member.social.twitter}
                     className="p-2 rounded-full bg-blue-800/50 hover:bg-cyan-500 text-blue-200 hover:text-white transition-all duration-200 hover:scale-110"
                   >
-                    <Twitter size={16} />
-                  </a>
-                  <a 
-                    href={`mailto:${member.social.email}`}
-                    className="p-2 rounded-full bg-blue-800/50 hover:bg-cyan-500 text-blue-200 hover:text-white transition-all duration-200 hover:scale-110"
-                  >
                     <Mail size={16} />
                   </a>
                 </div>
