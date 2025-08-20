@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowDown, Play, Sparkles } from 'lucide-react';
 
 interface HeroProps {
@@ -7,6 +7,24 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ onNavClick, onVideoClick }) => {
+  const [showVideo, setShowVideo] = useState(false);
+
+  // Fermer la modal avec la touche Escape
+  useEffect(() => {
+    if (!showVideo) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setShowVideo(false);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [showVideo]);
+
+  const handleVideoClick = () => {
+    setShowVideo(true);
+    // Supprimer l'appel à onVideoClick pour éviter le double modal
+    // if (onVideoClick) onVideoClick();
+  };
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated Background */}
@@ -52,7 +70,7 @@ const Hero: React.FC<HeroProps> = ({ onNavClick, onVideoClick }) => {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
             <button
-              onClick={onVideoClick}
+              onClick={handleVideoClick}
               className="group bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 flex items-center gap-2 shadow-lg shadow-cyan-500/25 hover:shadow-xl hover:shadow-cyan-500/40 transform hover:scale-105"
             >
               <Play size={20} />
@@ -66,6 +84,30 @@ const Hero: React.FC<HeroProps> = ({ onNavClick, onVideoClick }) => {
               Learn More
             </button>
           </div>
+
+          {/* Video Modal */}
+          {showVideo && (
+            <div
+              className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+              onClick={() => setShowVideo(false)}
+            >
+              <div
+                className="relative w-full max-w-3xl"
+                onClick={e => e.stopPropagation()} // Empêche la fermeture si on clique sur la vidéo
+              >
+                <button
+                  className="absolute top-2 right-2 text-white text-2xl"
+                  onClick={() => setShowVideo(false)}
+                >
+                  ×
+                </button>
+                <video controls autoPlay className="w-full rounded-lg shadow-lg">
+                  <source src="/public/imgs/project/Trailer_V004.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          )}
 
           <div className="animate-bounce">
             <button

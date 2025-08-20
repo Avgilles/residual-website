@@ -10,7 +10,6 @@ const Team: React.FC = () => {
       image: './public/imgs/karol.png',
       social: {
         linkedin: '#',
-        twitter: '#',
         email: 'residual.immersive@gmail.com'
       }
     },
@@ -21,7 +20,6 @@ const Team: React.FC = () => {
       image: './public/imgs/gilles.png',
       social: {
         linkedin: '#',
-        twitter: '#',
         email: 'residual.immersive@gmail.com'
       }
     },
@@ -32,7 +30,6 @@ const Team: React.FC = () => {
       image: './public/imgs/atte.png',
       social: {
         linkedin: '#',
-        twitter: '#',
         email: 'residual.immersive@gmail.com'
       }
     },
@@ -43,7 +40,6 @@ const Team: React.FC = () => {
       image: './public/imgs/sara.png',
       social: {
         linkedin: '#',
-        twitter: '#',
         email: 'residual.immersive@gmail.com'
       }
     }
@@ -86,7 +82,7 @@ const Team: React.FC = () => {
                   {member.bio}
                 </p>
                 
-                <div className="flex justify-center gap-3">
+                {/* <div className="flex justify-center gap-3">
                   <a 
                     href={member.social.linkedin}
                     className="p-2 rounded-full bg-blue-800/50 hover:bg-cyan-500 text-blue-200 hover:text-white transition-all duration-200 hover:scale-110"
@@ -99,7 +95,7 @@ const Team: React.FC = () => {
                   >
                     <Mail size={16} />
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

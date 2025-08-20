@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ExternalLink, Award, Users, Clock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Projects: React.FC = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  // Fermer la modal avec la touche Escape
+  useEffect(() => {
+    if (!showModal) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setShowModal(false);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [showModal]);
+
   const projects = [
     {
       title: 'Residual',
@@ -10,7 +23,8 @@ const Projects: React.FC = () => {
       image: './public/imgs/project/residual_project.png',
       features: ['Procedural Generation', 'Binaural Audio', 'Gesture Recognition', 'Adaptive Environment'],
       status: 'Featured Project',
-      year: '2025'
+      year: '2025',
+      video: '/public/imgs/project/Trailer_V004.mp4'
     }
   ];
 
@@ -79,18 +93,47 @@ const Projects: React.FC = () => {
                 </div>
                 
                 <div className="flex gap-4 pt-4">
-                  <button className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 flex items-center gap-2 shadow-lg shadow-cyan-500/25 hover:shadow-xl hover:shadow-cyan-500/40 transform hover:scale-105">
+                  <button
+                    className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 flex items-center gap-2 shadow-lg shadow-cyan-500/25 hover:shadow-xl hover:shadow-cyan-500/40 transform hover:scale-105"
+                    onClick={() => setShowModal(true)}
+                  >
                     <ExternalLink size={18} />
                     View Project
                   </button>
-                  <button className="border-2 border-blue-400/30 hover:border-cyan-400 text-blue-200 hover:text-cyan-400 px-6 py-3 rounded-full font-medium transition-all duration-300">
+                  <Link 
+                    to="/project/residual"
+                    className="border-2 border-blue-400/30 hover:border-cyan-400 text-blue-200 hover:text-cyan-400 px-6 py-3 rounded-full font-medium transition-all duration-300 inline-block text-center"
+                  >
                     Case Study
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
           ))}
         </div>
+        {/* Modal vidéo projet */}
+        {showModal && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+            onClick={() => setShowModal(false)}
+          >
+            <div
+              className="relative w-full max-w-3xl"
+              onClick={e => e.stopPropagation()}
+            >
+              <button
+                className="absolute top-2 right-2 text-white text-2xl"
+                onClick={() => setShowModal(false)}
+              >
+                ×
+              </button>
+              <video controls autoPlay className="w-full rounded-lg shadow-lg">
+                <source src={projects[0].video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

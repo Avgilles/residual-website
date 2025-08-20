@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
                   residual.immersive@gmail.com
                 </a>
               </li>
-              <li className="flex items-center gap-3">
+              {/* <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-cyan-400" />
                 <a href="tel:+15551234567" className="text-blue-300 hover:text-cyan-400 transition-colors duration-200">
                   +1 (555) 123-4567
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
               <li className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-cyan-400" />
                 <span className="text-blue-300">San Francisco, CA</span>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

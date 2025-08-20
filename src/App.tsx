@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -8,8 +9,10 @@ import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import VideoModal from './components/VideoModal';
+import CaseStudy from './components/CaseStudy';
 
-function App() {
+// Home Page Component
+const HomePage: React.FC = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
 
@@ -53,6 +56,17 @@ function App() {
       <Footer />
       <VideoModal isOpen={isVideoModalOpen} onClose={() => setIsVideoModalOpen(false)} />
     </div>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/project/residual" element={<CaseStudy />} />
+      </Routes>
+    </Router>
   );
 }
 

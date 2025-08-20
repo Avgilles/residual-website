@@ -58,24 +58,24 @@ Sent from residual creative studio website contact form
       value: 'residual.immersive@gmail.com',
       link: 'mailto:residual.immersive@gmail.com'
     },
-    {
-      icon: <Phone className="w-6 h-6" />,
-      label: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
-    },
-    {
-      icon: <MapPin className="w-6 h-6" />,
-      label: 'Location',
-      value: 'San Francisco, CA',
-      link: '#'
-    },
-    {
-      icon: <Calendar className="w-6 h-6" />,
-      label: 'Schedule',
-      value: 'Book a Meeting',
-      link: '#'
-    }
+    // {
+    //   icon: <Phone className="w-6 h-6" />,
+    //   label: 'Phone',
+    //   value: '+33',
+    //   link: 'tel:+15551234567'
+    // },
+    // {
+    //   icon: <MapPin className="w-6 h-6" />,
+    //   label: 'Location',
+    //   value: 'San Francisco, CA',
+    //   link: '#'
+    // },
+    // {
+    //   icon: <Calendar className="w-6 h-6" />,
+    //   label: 'Schedule',
+    //   value: 'Book a Meeting',
+    //   link: '#'
+    // }
   ];
 
   return (
@@ -91,7 +91,7 @@ Sent from residual creative studio website contact form
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-1 gap-16">
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-white mb-6">Get in Touch</h3>
@@ -142,7 +142,7 @@ Sent from residual creative studio website contact form
             </div>
           </div>
 
-          <div className="bg-blue-800/20 backdrop-blur-sm border border-blue-700/30 rounded-3xl shadow-2xl p-8">
+          {/* <div className="bg-blue-800/20 backdrop-blur-sm border border-blue-700/30 rounded-3xl shadow-2xl p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
@@ -237,7 +237,7 @@ Sent from residual creative studio website contact form
                 Send Message
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

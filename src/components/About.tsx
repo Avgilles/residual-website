@@ -43,7 +43,7 @@ const About: React.FC = () => {
             <h3 className="text-3xl font-bold text-white mb-6">Our Mission</h3>
             <p className="text-lg text-blue-200 mb-6 leading-relaxed">
               In a world increasingly disconnected from nature and each other, we believe virtual reality 
-              can serve as a bridge—connecting people to environments, emotions, and experiences that 
+              can serve as a bridge connecting people to environments, emotions, and experiences that 
               inspire positive change.
             </p>
             <p className="text-lg text-blue-200 mb-6 leading-relaxed">
