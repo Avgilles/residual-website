@@ -12,8 +12,36 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
+    
+    // Create mailto link with form data
+    const subject = encodeURIComponent(`New Project Inquiry from ${formData.name}`);
+    const body = encodeURIComponent(`
+Name: ${formData.name}
+Email: ${formData.email}
+Company: ${formData.company || 'Not specified'}
+Project Type: ${formData.project || 'Not specified'}
+
+Message:
+${formData.message}
+
+---
+Sent from residual creative studio website contact form
+    `);
+    
+    const mailtoLink = `mailto:residual.immersive@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoLink;
+    
+    // Reset form after submission
+    setFormData({
+      name: '',
+      email: '',
+      company: '',
+      project: '',
+      message: ''
+    });
+    
+    // Show success message (you could add a toast notification here)
+    alert('Thank you for your message! Your email client should open with the pre-filled message.');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -27,8 +55,8 @@ const Contact: React.FC = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       label: 'Email',
-      value: 'hello@residual.studio',
-      link: 'mailto:hello@residual.studio'
+      value: 'residual.immersive@gmail.com',
+      link: 'mailto:residual.immersive@gmail.com'
     },
     {
       icon: <Phone className="w-6 h-6" />,

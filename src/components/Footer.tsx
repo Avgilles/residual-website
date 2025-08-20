@@ -26,10 +26,10 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Services</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-blue-300 hover:text-cyan-400 transition-colors duration-200">VR Experience Design</a></li>
-              <li><a href="#" className="text-blue-300 hover:text-cyan-400 transition-colors duration-200">Interactive Installations</a></li>
-              <li><a href="#" className="text-blue-300 hover:text-cyan-400 transition-colors duration-200">Custom Development</a></li>
-              <li><a href="#" className="text-blue-300 hover:text-cyan-400 transition-colors duration-200">Consultation</a></li>
+              <li><a href="#services" className="text-blue-300 hover:text-cyan-400 transition-colors duration-200">VR Experience Design</a></li>
+              <li><a href="#services" className="text-blue-300 hover:text-cyan-400 transition-colors duration-200">Interactive Installations</a></li>
+              <li><a href="#services" className="text-blue-300 hover:text-cyan-400 transition-colors duration-200">Custom Development</a></li>
+              <li><a href="#services" className="text-blue-300 hover:text-cyan-400 transition-colors duration-200">Consultation</a></li>
             </ul>
           </div>
 
@@ -38,8 +38,8 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-cyan-400" />
-                <a href="mailto:hello@residual.studio" className="text-blue-300 hover:text-cyan-400 transition-colors duration-200">
-                  hello@residual.studio
+                <a href="mailto:residual.immersive@gmail.com" className="text-blue-300 hover:text-cyan-400 transition-colors duration-200">
+                  residual.immersive@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -62,14 +62,14 @@ const Footer: React.FC = () => {
               © {currentYear} residual creative studio. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <a href="#" className="text-blue-300 hover:text-cyan-400 transition-colors duration-200 text-sm">
-                Privacy Policy
+              <a href="#about" className="text-blue-300 hover:text-cyan-400 transition-colors duration-200 text-sm">
+                About Us
               </a>
-              <a href="#" className="text-blue-300 hover:text-cyan-400 transition-colors duration-200 text-sm">
-                Terms of Service
+              <a href="#contact" className="text-blue-300 hover:text-cyan-400 transition-colors duration-200 text-sm">
+                Contact
               </a>
-              <a href="#" className="text-blue-300 hover:text-cyan-400 transition-colors duration-200 text-sm">
-                Sustainability
+              <a href="#projects" className="text-blue-300 hover:text-cyan-400 transition-colors duration-200 text-sm">
+                Projects
               </a>
             </div>
           </div>

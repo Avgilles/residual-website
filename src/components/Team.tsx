@@ -11,7 +11,7 @@ const Team: React.FC = () => {
       social: {
         linkedin: '#',
         twitter: '#',
-        email: 'alex@residual.studio'
+        email: 'residual.immersive@gmail.com'
       }
     },
     {
@@ -22,7 +22,7 @@ const Team: React.FC = () => {
       social: {
         linkedin: '#',
         twitter: '#',
-        email: 'maya@residual.studio'
+        email: 'residual.immersive@gmail.com'
       }
     },
     {
@@ -33,7 +33,7 @@ const Team: React.FC = () => {
       social: {
         linkedin: '#',
         twitter: '#',
-        email: 'jordan@residual.studio'
+        email: 'residual.immersive@gmail.com'
       }
     },
     {
@@ -44,7 +44,7 @@ const Team: React.FC = () => {
       social: {
         linkedin: '#',
         twitter: '#',
-        email: 'sam@residual.studio'
+        email: 'residual.immersive@gmail.com'
       }
     }
   ];
