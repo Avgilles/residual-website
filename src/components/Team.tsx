@@ -7,7 +7,7 @@ const Team: React.FC = () => {
       name: 'Karol Wójcicki​',
       role: 'Creative Director',
       bio: 'Visionary artist with 10+ years in immersive media, passionate about conscious technology and environmental storytelling.',
-      image: './public/imgs/karol.png',
+      image: '/imgs/karol.png',
       social: {
         linkedin: '#',
         email: 'residual.immersive@gmail.com'
@@ -17,7 +17,7 @@ const Team: React.FC = () => {
       name: 'Gilles Avraam​',
       role: 'Technical Director',
       bio: 'Technical innovator specializing in Unreal and Houdini and immersive experiences, dedicated to pushing the boundaries of virtual reality.',
-      image: './public/imgs/gilles.png',
+      image: '/imgs/gilles.png',
       social: {
         linkedin: '#',
         email: 'residual.immersive@gmail.com'
@@ -27,7 +27,7 @@ const Team: React.FC = () => {
       name: 'Atte Oliver Mielonen',
       role: 'Technical artist & Game artist',
       bio: 'Human-centered designer focused on creating intuitive and meaningful interactions in virtual environments.',
-      image: './public/imgs/atte.png',
+      image: '/imgs/atte.png',
       social: {
         linkedin: '#',
         email: 'residual.immersive@gmail.com'
@@ -37,7 +37,7 @@ const Team: React.FC = () => {
       name: 'Sara Kapciak​',
       role: 'Concept artist & Business specialist',
       bio: 'Concept Artist and Business Specialist, blending creativity with strategy.',
-      image: './public/imgs/sara.png',
+      image: '/imgs/sara.png',
       social: {
         linkedin: '#',
         email: 'residual.immersive@gmail.com'
