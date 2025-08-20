@@ -4,10 +4,10 @@ import { Linkedin, Twitter, Mail } from 'lucide-react';
 const Team: React.FC = () => {
   const teamMembers = [
     {
-      name: 'Alex Chen',
-      role: 'Creative Director & Founder',
+      name: 'Karol Wójcicki​',
+      role: 'Creative Director',
       bio: 'Visionary artist with 10+ years in immersive media, passionate about conscious technology and environmental storytelling.',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: './public/imgs/karol.png',
       social: {
         linkedin: '#',
         twitter: '#',
@@ -15,10 +15,10 @@ const Team: React.FC = () => {
       }
     },
     {
-      name: 'Maya Rodriguez',
-      role: 'Lead VR Developer',
-      bio: 'Technical innovator specializing in Unity and immersive experiences, dedicated to pushing the boundaries of virtual reality.',
-      image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400',
+      name: 'Gilles Avraam​',
+      role: 'Technical Director',
+      bio: 'Technical innovator specializing in Unreal and Houdini and immersive experiences, dedicated to pushing the boundaries of virtual reality.',
+      image: './public/imgs/gilles.png',
       social: {
         linkedin: '#',
         twitter: '#',
@@ -26,10 +26,10 @@ const Team: React.FC = () => {
       }
     },
     {
-      name: 'Jordan Kim',
-      role: 'UX Designer',
+      name: 'Atte Oliver Mielonen',
+      role: 'Technical artist & Game artist',
       bio: 'Human-centered designer focused on creating intuitive and meaningful interactions in virtual environments.',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: './public/imgs/atte.png',
       social: {
         linkedin: '#',
         twitter: '#',
@@ -37,10 +37,10 @@ const Team: React.FC = () => {
       }
     },
     {
-      name: 'Sam Thompson',
-      role: 'Sound Designer',
-      bio: 'Audio architect crafting immersive soundscapes that enhance the emotional depth of virtual experiences.',
-      image: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=400',
+      name: 'Sara Kapciak​',
+      role: 'Concept artist & Business specialist',
+      bio: 'Concept Artist and Business Specialist, blending creativity with strategy.',
+      image: './public/imgs/sara.png',
       social: {
         linkedin: '#',
         twitter: '#',
