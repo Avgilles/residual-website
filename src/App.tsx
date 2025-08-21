@@ -50,7 +50,7 @@ const HomePage: React.FC = () => {
       <Hero onNavClick={handleNavClick} onVideoClick={() => setIsVideoModalOpen(true)} />
       <About />
       <Projects />
-      <Team />
+      {/* <Team /> */}
       <Services />
       <Contact />
       <Footer />

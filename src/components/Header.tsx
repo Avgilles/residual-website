@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onNavClick }) => {
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'projects', label: 'Projects' },
-    { id: 'team', label: 'Team' },
+    // { id: 'team', label: 'Team' },
     { id: 'services', label: 'Services' },
     { id: 'contact', label: 'Contact' },
   ];
